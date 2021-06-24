@@ -1,0 +1,14 @@
+CREATE TABLE Erreur(
+	`idErreur` int AUTO_INCREMENT NOT NULL,
+	`DateErreur` datetime NULL,
+	`FunctionCalled` Longtext NULL,
+	`ParametersCalled` Longtext NULL,
+	`StackTrace` Longtext NULL,
+	`Message` Longtext NULL,
+	`LoginUser` Longtext NULL,
+ CONSTRAINT `PK_Erreur` PRIMARY KEY 
+(
+	`idErreur` ASC
+) 
+);
+
